@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 
+        source, destination, jouney date, no of passangers, bus type (express, sleeping, ac, ac sleeping)
+    -->
+    <form action="success.html" method="get">
+        <table width="100%" cellpadding="5" border="2">
+            <tr>
+                <td>From</td>
+                <td>To</td>
+                <td>journey date</td>
+                <td>Seats</td>
+                <td>Bus type</td>
+                <td>Search</td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="text" name="from" id="from" required />
+                </td>
+                <td>
+                    <input type="text" name="to" id="to" required />
+                </td>
+                <td>
+                    <input type="date" name="journeydate" id="journeydate" required />
+                </td>
+                <td>
+                    <select name="seats" id="seats" required>
+                        <option value="">no of seats</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                    </select>
+                </td>
+                <td>
+                    <label for="express">
+                        <input type="checkbox" name="express" id="express" value="1" /> Express
+                    </label>
+                    <label for="ac">
+                        <input type="checkbox" name="ac" id="ac" value="2" /> AC
+                    </label>
+                    <label for="sleeper">
+                        <input type="checkbox" name="sleeper" id="sleeper" value="3" /> Sleeper
+
+                    </label>
+                    <label for="acsleeper">
+                        <input type="checkbox" name="acsleeper" id="acsleeper" value="4" /> AC Slepeer
+
+                    </label>
+                </td>
+                <td>
+                    <input type="submit" value="search" />
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>
