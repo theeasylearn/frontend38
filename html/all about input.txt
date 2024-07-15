@@ -19,4 +19,18 @@ select tag
 textarea tag 
     multiline can be accepted using textarea
 
+type of form submission method
+---------------------------------------------
+Get method
+    input is visible in address bar. 
+    anyone software/user can change submitted input
+    should be used only when user should be able to directly edit submitted input or bookmark url.
+    get method only works with text input. can not work with binary input. 
+    limit of input is 4KB. we can submit more then 4kb input. 
+
+Post method 
+    input is not visible in any manner. 
+    anyone can not access/change input. 
+    it works on both text and binary input. 
+    there is not limit of post method set by html/browser itself.
     
