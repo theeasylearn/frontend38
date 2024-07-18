@@ -9,53 +9,48 @@
 
 <body>
     <!-- 
-        source, destination, jouney date, no of passangers, bus type (express, sleeping, ac, ac sleeping)
-    -->
-    <form action="success.html" method="get">
-        <table width="100%" cellpadding="5" border="2">
+        source, destination, jouney date, no of passangers, bus type (express, sleeping, ac, ac sleeping) -->
+    <form action="success.html" method="post">
+        <table width="100%" border="1" cellpadding="5">
             <tr>
-                <td>From</td>
-                <td>To</td>
-                <td>journey date</td>
-                <td>Seats</td>
-                <td>Bus type</td>
-                <td>Search</td>
+                <td>Source</td>
+                <td>Destination</td>
+                <td>jouney date</td>
+                <td>no of passangers</td>
+                <td colspan="2">bus type</td>
             </tr>
             <tr>
                 <td>
-                    <input type="text" name="from" id="from" required />
+                    <input type="text" name="source" id="source" required />
                 </td>
                 <td>
-                    <input type="text" name="to" id="to" required />
+                    <input type="text" name="destination" id="destination" required />
                 </td>
                 <td>
                     <input type="date" name="journeydate" id="journeydate" required />
-                </td>
+                </td> 
                 <td>
-                    <select name="seats" id="seats" required>
-                        <option value="">no of seats</option>
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5</option>
-                        <option>6</option>
+                    <select name="seat" id="seat" required>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
                     </select>
                 </td>
                 <td>
-                    <label for="express">
-                        <input type="checkbox" name="express" id="express" value="1" /> Express
-                    </label>
                     <label for="ac">
-                        <input type="checkbox" name="ac" id="ac" value="2" /> AC
+                        <input type="checkbox" name="ac" id="ac" value="ac" />AC
+                    </label>
+                    <label for="express">
+                        <input type="checkbox" name="express" id="express" value="express" />Express
                     </label>
                     <label for="sleeper">
-                        <input type="checkbox" name="sleeper" id="sleeper" value="3" /> Sleeper
-
+                        <input type="checkbox" name="sleeper" id="sleeper" value="sleeper" />Sleeper
                     </label>
                     <label for="acsleeper">
-                        <input type="checkbox" name="acsleeper" id="acsleeper" value="4" /> AC Slepeer
-
+                        <input type="checkbox" name="acsleeper" id="acsleeper" value="acsleeper" />AC Sleeper
                     </label>
                 </td>
                 <td>
