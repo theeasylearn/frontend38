@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <h1>input related attributes</h1>
     <form action="success.html" method="post">
@@ -12,43 +14,42 @@
             <tr>
                 <td>Pan card [format(abcde9999z)]</td>
                 <td>
-                    <input type="text" name="pancard" id="pancard" required
-                    pattern="[a-z]{5}[0-9]{4}{a-z}{1}" placeholder="enter your pan card" />
+                    <input type="text" name="pancard" id="pancard" required pattern="[a-z]{5}[0-9]{4}{a-z}{1}"
+                        placeholder="enter your pan card" />
                 </td>
             </tr>
             <tr>
                 <td>aadhar card number (9999-9999-9999)</td>
                 <td>
-                    <input type="text" name="aadharcard" id="aadharcard" required
-                     pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}" placeholder="enter your aadhar card"   />
+                    <input type="text" name="aadharcard" id="aadharcard" required pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}"
+                        placeholder="enter your aadhar card" />
                 </td>
             </tr>
             <tr>
                 <td>Mobile No (9999999999)</td>
-                <td><input type="text" name="mobile" id="mobile" required
-                     pattern="[0-9]{10}" placeholder="enter your mobile"  /></td>
+                <td><input type="text" name="mobile" id="mobile" required pattern="[0-9]{10}"
+                        placeholder="enter your mobile" /></td>
             </tr>
             <tr>
                 <td>Select your birthdate</td>
                 <td>
-                    <input type="date" name="birthdate" id="birthdate" required
-                    min="2000-01-01" max="2024-07-24" />
+                    <input type="date" name="birthdate" id="birthdate" required min="2000-01-01" max="2024-07-24" />
                 </td>
             </tr>
             <tr>
                 <td>Select your photo</td>
                 <td>
-                    <input type="file" name="photo" id="photo" required accept="image/*"
-                    multiple />
+                    <input type="file" name="photo" id="photo" required accept="image/*" multiple />
                 </td>
             </tr>
             <tr>
                 <td colspan="2" align="center">
-                    <input type="submit" value="submit form" >
+                    <input type="submit" value="submit form">
                 </td>
             </tr>
-            
+
         </table>
     </form>
 </body>
+
 </html>
