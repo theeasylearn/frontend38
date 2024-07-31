@@ -29,16 +29,58 @@
             text-transform: uppercase;
             margin-bottom: 10px;
         }
+        /* id selector style */
         #site-header, #site-footer
         {
             background-color: navy;
             color:white;
         }
-
+        #site-header 
+        {
+            position:sticky;
+            top:0px;
+            left:0px;
+        }
         #site-footer 
         {
             text-align: center;
             padding:10px;
+        }
+        #news 
+        {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        article 
+        {
+            width:33.33%;
+            border: 1px solid black;
+            /* include border in width */
+            box-sizing: border-box;
+           
+        }
+        p 
+        {
+            text-align: justify;
+            text-indent: 50px;
+        }
+        article>header 
+        {
+            background-color: aliceblue;
+            text-align: center;
+        }
+        article>p 
+        {
+            margin: 10px;
+        }
+        .highlight
+        {
+            background-color: yellow;
+            color:red;
+        }
+        .text-large 
+        {
+            font-size: x-large;
         }
     </style>
 </head>
@@ -46,17 +88,17 @@
     <header id="site-header">
         <h1>the easylearn academy</h1>
     </header>
-    <section>
+    <section id="news">
         <article>
             <header>
-                <h2>article heading</h2>
+                <h2>1st article heading</h2>
             </header>
             <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit vitae adipisci tempore. Consectetur alias repellat vero quasi tempore exercitationem voluptates adipisci. Quod nihil consequatur ullam maxime doloribus officiis totam qui ab possimus magni, non dolore ex, provident praesentium cum quos! Obcaecati nihil odit exercitationem nam officiis nobis tempore eum veritatis accusamus soluta dicta eaque veniam, necessitatibus quo molestiae iusto corrupti deleniti pariatur, commodi eos, ab ea ipsa? Doloremque totam eum repudiandae dignissimos voluptatem fugit, dolores nisi error ex adipisci nostrum. Facere velit laborum ea molestias dolores ipsum alias! Nemo repellat temporibus tempora ut! Optio veniam error necessitatibus maxime neque expedita?
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit vitae adipisci tempore. <span class="highlight text-large">Consectetur alias repellat</span> vero quasi tempore exercitationem voluptates adipisci. Quod nihil consequatur ullam maxime doloribus officiis totam qui ab possimus magni, non dolore ex, provident praesentium cum quos! Obcaecati nihil odit exercitationem nam officiis nobis tempore eum veritatis accusamus soluta dicta eaque veniam, necessitatibus quo molestiae iusto corrupti deleniti pariatur, commodi eos, ab ea ipsa? Doloremque totam eum repudiandae dignissimos voluptatem fugit, dolores nisi error ex adipisci nostrum. Facere velit laborum ea molestias dolores ipsum alias! Nemo repellat temporibus tempora ut! Optio veniam error necessitatibus maxime neque expedita?
 
             </p>
             <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit vitae adipisci tempore. Consectetur alias repellat
+                Lorem, ipsum dolor sit amet <span class="text-large highlight">consectetur adipisicing elit</span>. Fugit vitae adipisci tempore. Consectetur alias repellat
                 vero quasi tempore exercitationem voluptates adipisci. Quod nihil consequatur ullam maxime doloribus officiis totam
                 qui ab possimus magni, non dolore ex, provident praesentium cum quos! Obcaecati nihil odit exercitationem nam
                 officiis nobis tempore eum veritatis accusamus soluta dicta eaque veniam, necessitatibus quo molestiae iusto
@@ -71,7 +113,38 @@
         </article>
         <article>
             <header>
-                <h2>article heading</h2>
+                <h2>2nd article heading</h2>
+            </header>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit vitae adipisci tempore. Consectetur alias
+                <span class="highlight">repellat vero quasi tempore exercitationem</span>voluptates adipisci. Quod nihil consequatur ullam maxime doloribus
+                officiis totam qui ab possimus magni, non dolore ex, provident praesentium cum quos! Obcaecati nihil odit
+                exercitationem nam officiis nobis tempore eum veritatis accusamus soluta dicta eaque veniam, necessitatibus quo
+                molestiae iusto corrupti deleniti pariatur, commodi eos, ab ea ipsa? Doloremque totam eum repudiandae
+                dignissimos voluptatem fugit, dolores nisi error ex adipisci nostrum. Facere velit laborum ea molestias dolores
+                ipsum alias! Nemo repellat temporibus tempora ut! Optio veniam error necessitatibus maxime neque expedita?
+        
+            </p>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit vitae adipisci tempore. Consectetur alias
+                repellat
+                vero quasi tempore exercitationem voluptates adipisci. Quod nihil consequatur ullam maxime doloribus officiis
+                totam
+                qui ab possimus magni, non dolore ex, provident praesentium cum quos! Obcaecati nihil odit exercitationem nam
+                officiis nobis tempore eum veritatis accusamus soluta dicta eaque veniam, necessitatibus quo molestiae iusto
+                corrupti deleniti pariatur, commodi eos, ab ea ipsa? Doloremque totam eum repudiandae dignissimos voluptatem
+                fugit,
+                dolores nisi error ex adipisci nostrum. Facere velit laborum ea molestias dolores ipsum alias! Nemo repellat
+                temporibus tempora ut! Optio veniam error necessitatibus maxime neque expedita?
+        
+            </p>
+            <footer>
+                <p>developed by the easylearn academy</p>
+            </footer>
+        </article>
+        <article>
+            <header>
+                <h2>3rd article heading</h2>
             </header>
             <p>
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit vitae adipisci tempore. Consectetur alias
@@ -102,7 +175,69 @@
         </article>
         <article>
             <header>
-                <h2>article heading</h2>
+                <h2>4th article heading</h2>
+            </header>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit vitae adipisci tempore. Consectetur alias
+                repellat vero quasi tempore exercitationem voluptates adipisci. Quod nihil consequatur ullam maxime doloribus
+                officiis totam qui ab possimus magni, non dolore ex, provident praesentium cum quos! Obcaecati nihil odit
+                exercitationem nam officiis nobis tempore eum veritatis accusamus soluta dicta eaque veniam, necessitatibus quo
+                molestiae iusto corrupti deleniti pariatur, commodi eos, ab ea ipsa? Doloremque totam eum repudiandae
+                dignissimos voluptatem fugit, dolores nisi error ex adipisci nostrum. Facere velit laborum ea molestias dolores
+                ipsum alias! Nemo repellat temporibus tempora ut! Optio veniam error necessitatibus maxime neque expedita?
+        
+            </p>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit vitae adipisci tempore. Consectetur alias
+                repellat
+                vero quasi tempore exercitationem voluptates adipisci. Quod nihil consequatur ullam maxime doloribus officiis
+                totam
+                qui ab possimus magni, non dolore ex, provident praesentium cum quos! Obcaecati nihil odit exercitationem nam
+                officiis nobis tempore eum veritatis accusamus soluta dicta eaque veniam, necessitatibus quo molestiae iusto
+                corrupti deleniti pariatur, commodi eos, ab ea ipsa? Doloremque totam eum repudiandae dignissimos voluptatem
+                fugit,
+                dolores nisi error ex adipisci nostrum. Facere velit laborum ea molestias dolores ipsum alias! Nemo repellat
+                temporibus tempora ut! Optio veniam error necessitatibus maxime neque expedita?
+        
+            </p>
+            <footer>
+                <p>developed by the easylearn academy</p>
+            </footer>
+        </article>
+        <article>
+            <header>
+                <h2>5th article heading</h2>
+            </header>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit vitae adipisci tempore. Consectetur alias
+                repellat vero quasi tempore exercitationem voluptates adipisci. Quod nihil consequatur ullam maxime doloribus
+                officiis totam qui ab possimus magni, non dolore ex, provident praesentium cum quos! Obcaecati nihil odit
+                exercitationem nam officiis nobis tempore eum veritatis accusamus soluta dicta eaque veniam, necessitatibus quo
+                molestiae iusto corrupti deleniti pariatur, commodi eos, ab ea ipsa? Doloremque totam eum repudiandae
+                dignissimos voluptatem fugit, dolores nisi error ex adipisci nostrum. Facere velit laborum ea molestias dolores
+                ipsum alias! Nemo repellat temporibus tempora ut! Optio veniam error necessitatibus maxime neque expedita?
+        
+            </p>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit vitae adipisci tempore. Consectetur alias
+                repellat
+                vero quasi tempore exercitationem voluptates adipisci. Quod nihil consequatur ullam maxime doloribus officiis
+                totam
+                qui ab possimus magni, non dolore ex, provident praesentium cum quos! Obcaecati nihil odit exercitationem nam
+                officiis nobis tempore eum veritatis accusamus soluta dicta eaque veniam, necessitatibus quo molestiae iusto
+                corrupti deleniti pariatur, commodi eos, ab ea ipsa? Doloremque totam eum repudiandae dignissimos voluptatem
+                fugit,
+                dolores nisi error ex adipisci nostrum. Facere velit laborum ea molestias dolores ipsum alias! Nemo repellat
+                temporibus tempora ut! Optio veniam error necessitatibus maxime neque expedita?
+        
+            </p>
+            <footer>
+                <p>developed by the easylearn academy</p>
+            </footer>
+        </article>
+        <article>
+            <header>
+                <h2>6th article heading</h2>
             </header>
             <p>
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit vitae adipisci tempore. Consectetur alias
