@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <style>
         * 
         {
@@ -11,7 +14,7 @@
             padding:0px;
             letter-spacing: 1px;
             font-size:16px;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-family: "Montserrat", sans-serif;
             line-height: 150%;
         }
         h1 
@@ -22,10 +25,9 @@
         {
             font-size: 1.2rem;
         }
-
         h1, h2, h3, h4, h5, h6 
         {
-            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-family: "Merriweather", serif;
             text-transform: uppercase;
             margin-bottom: 10px;
         }
@@ -40,6 +42,17 @@
             position:sticky;
             top:0px;
             left:0px;
+            display: flex;
+            /* horizontal alignment */
+            justify-content: space-between; 
+
+            /* vertical alignment */
+            align-items: center;
+        }
+        #site-header>h1 
+        {
+            margin-left:10px;
+            margin-top:10px;
         }
         #site-footer 
         {
@@ -82,11 +95,44 @@
         {
             font-size: x-large;
         }
+        #menu 
+        {
+            list-style-type: none;
+            display: flex;
+            gap: 20px;
+        }
+        #menu>li>a:link 
+        {
+            background-color: white;
+            padding:5px 10px;
+            border-radius: 10px;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-decoration: none;
+        }
     </style>
 </head>
 <body>
     <header id="site-header">
         <h1>the easylearn academy</h1>
+        <ul id="menu">
+            <li>
+                <a href="lesson1.html">Sample Link</a>
+            </li>
+            <li>
+                <a href="lesson1.html">Sample Link</a>
+            </li>
+            <li>
+                <a href="lesson1.html">Sample Link</a>
+            </li>
+            <li>
+                <a href="lesson1.html">Sample Link</a>
+            </li>
+            <li>
+                <a href="lesson1.html">Sample Link</a>
+            </li>
+            
+        </ul>
     </header>
     <section id="news">
         <article>
