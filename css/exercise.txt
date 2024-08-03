@@ -1,0 +1,2 @@
+1) apply rotate effect on image when user set mouse pointer on it.
+2) apply flip effect on image when user set mouse pointer on it.
