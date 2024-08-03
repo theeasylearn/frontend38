@@ -1,26 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>Document</title>
       <style>
-            .profile 
-            {
+            .profile {
                   display: inline-block;
-                  height:200px;
-                  width:200px;
+                  height: 200px;
+                  width: 200px;
                   border-radius: 50%;
                   overflow: hidden;
             }
+
+            .profile>img {
+                  height: 100%;
+                  width: 100%;
+                  filter: grayscale(100%);
+                  transition: filter 0.3s ease-in-out, transform 0.3s ease-in-out;
+            }
+
+            .box {
+                  border: 1px solid black;
+                  display: flex;
+                  padding: 20px 0px;
+                  justify-content: space-around;
+            }
+
+            .profile>img:hover {
+                  filter: grayscale(0%);
+                  transform: scale(1.25);
+            }
+
+            .profile:hover {
+                  box-shadow: 0 0 15px gray;
+                  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+            }
       </style>
 </head>
+
 <body>
-      <div class="profile">
-            <img src="images/tiger.webp" alt="" />
-      </div>
-      <div class="profile">
-            <img src="images/funny_tiger.webp" alt="" />
-      </div>
+      <section class="box">
+            <div class="profile">
+                  <img src="images/funny_tiger.webp" alt="" />
+            </div>
+            <div class="profile">
+                  <img src="images/funny_tiger.webp" alt="" />
+            </div>
+            <div class="profile">
+                  <img src="images/funny_tiger.webp" alt="" />
+            </div>
+            <div class="profile">
+                  <img src="images/funny_tiger.webp" alt="" />
+            </div>
+            <div class="profile">
+                  <img src="images/funny_tiger.webp" alt="" />
+            </div>
+      </section>
 </body>
+
 </html>
