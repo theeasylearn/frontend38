@@ -1,0 +1,64 @@
+* {
+    letter-spacing: 1px;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: 0px;
+    font-size: 18px;
+}
+#site {
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-areas:
+        "header header header"
+        "menu content sidebar"
+        "footer footer footer";
+    grid-template-rows: 10% 80% 10%;
+    height: 100vh;
+    background-color: #E9F1FA;
+}
+#header {
+    grid-area: header;
+    background-color: #00ABE4;
+}
+#menu {
+    grid-area: menu;
+    background-color: #f8fdff;
+}
+#content {
+    grid-area: content;
+    overflow: scroll;
+    scrollbar-width: none;
+}
+#sidebar {
+    grid-area: sidebar;
+    background-color: #f8fdff;
+}
+
+#footer {
+    grid-area: footer;
+    background-color: #00ABE4;
+}
+#site-heading 
+{
+    font-size: 2.5rem;
+    color:white;
+    text-transform: uppercase;
+    padding-left:20px;
+    text-shadow:
+            0 1px #808d93,
+            -1px 0 #cdd2d5,
+            -1px 2px #808d93,
+            -2px 1px #cdd2d5,
+            -2px 3px #808d93,
+            -3px 2px #cdd2d5,
+            -3px 4px #808d93,
+            -4px 3px #cdd2d5,
+            -4px 5px #808d93,
+            -5px 4px #cdd2d5,
+            -5px 6px #808d93,
+            -6px 5px #cdd2d5,
+            -6px 7px #808d93,
+            -7px 6px #cdd2d5,
+            -7px 8px #808d93,
+            -8px 7px #cdd2d5;
+}
