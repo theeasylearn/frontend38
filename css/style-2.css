@@ -19,10 +19,25 @@
 #header {
     grid-area: header;
     background-color: #00ABE4;
+    text-align: center;
+   
 }
+#header>span 
+{
+    display: flex;
+    margin-left: 10px;
+}
+
 #menu {
     grid-area: menu;
     background-color: #f8fdff;
+}
+#menu>ul 
+{
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 #content {
     grid-area: content;
