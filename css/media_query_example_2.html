@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            letter-spacing: 1px;
+            line-height: 150%;
+            box-sizing: border-box;
+        }
+
+        section {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        p {
+            text-align: justify;
+            text-indent: 25px;
+        }
+
+        article {
+            border: 1px solid black;
+            padding: 5px;
+        }
+
+        /* ##Device = Desktops ##Screen = 1281px to higher resolution desktop */
+        @media (min-width: 1281px) {
+              article {
+                width: 20%;
+                font-size: 19px;
+            }
+        }
+
+        /* ##Device = Laptops, Desktops ##Screen = B/w 1025px to 1280px*/
+        @media (min-width: 1025px) and (max-width: 1280px) {
+              article {
+                width: 25%;
+                font-size: 18px;
+            }
+        }
+
+        /* ##Device = Tablets, Ipads (portrait) ##Screen = B/w 768px to 1024px */
+        @media (min-width: 768px) and (max-width: 1024px) {
+              article {
+                width: 33.33%;
+                font-size: 17px;
+            }
+        }
+
+        /* ##Device = Low Resolution Tablets,  ##Screen = B/w 481px to 767px */
+        @media (min-width: 481px) and (max-width: 767px) {
+            article {
+                width: 50%;
+                font-size: 18px;
+            }
+        }
+
+        /*  ##Device = Most of the Smartphones Mobiles (Portrait) ##Screen = B/w 320px to 479px */
+        @media (min-width: 320px) and (max-width: 480px) {
+            article {
+                width: 100%;
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Media query example</h1>
+    <section>
+        <article>
+            <header>
+                <h3>News 1</h3>
+            </header>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia dolor aspernatur non accusamus culpa
+                tempora rem voluptatum voluptates maxime, perferendis sequi temporibus cupiditate? Rem facere iusto
+                suscipit possimus temporibus maiores id eveniet voluptas explicabo nam dolor voluptatum eius optio rerum
+                blanditiis culpa consequuntur sequi libero perspiciatis voluptatem commodi, beatae quod quibusdam
+                tempora. Non facere laudantium assumenda nemo nulla optio eligendi, repellat officiis beatae illum ex
+                atque a harum accusamus! Non repellendus facere saepe ducimus, libero dolores aliquam unde magnam harum
+                ut quis laborum incidunt laudantium esse dignissimos ab explicabo soluta praesentium vitae temporibus!
+                Earum nulla doloremque deleniti, obcaecati dolores animi dolor odio totam necessitatibus itaque
+                accusantium est reiciendis, fugit et labore omnis quidem voluptatibus? Magni omnis fuga id recusandae
+                rerum labore optio. Distinctio similique cumque culpa fuga repellat, molestias, soluta consequatur ad
+                delectus quia et, error nam fugiat qui voluptate doloremque odio obcaecati voluptatum. Provident, velit
+                minima. Amet enim, nobis sint reprehenderit unde ducimus temporibus labore perspiciatis expedita facilis
+                voluptatum. Voluptate facere praesentium, dolorem debitis officia, amet distinctio velit expedita, omnis
+                iusto quod nam vel aperiam impedit eos ipsum dolore dignissimos? Repudiandae ullam deleniti a. Alias ab
+                rem facilis molestias eius, quidem repellat suscipit soluta, sint laudantium dignissimos? Obcaecati,
+                amet.</p>
+            <footer>
+                Author : frontend41@theeasylearnacademy.com
+            </footer>
+        </article>
+
+        <article>
+            <header>
+                <h3>News 2</h3>
+            </header>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia dolor aspernatur non accusamus culpa
+                tempora rem
+                voluptatum voluptates maxime, perferendis sequi temporibus cupiditate? Rem facere iusto suscipit
+                possimus
+                temporibus maiores id eveniet voluptas explicabo nam dolor voluptatum eius optio rerum blanditiis culpa
+                consequuntur sequi libero perspiciatis voluptatem commodi, beatae quod quibusdam tempora. Non facere
+                laudantium
+                assumenda nemo nulla optio eligendi, repellat officiis beatae illum ex atque a harum accusamus! Non
+                repellendus
+                facere saepe ducimus, libero dolores aliquam unde magnam harum ut quis laborum incidunt laudantium esse
+                dignissimos ab explicabo soluta praesentium vitae temporibus! Earum nulla doloremque deleniti, obcaecati
+                dolores
+                animi dolor odio totam necessitatibus itaque accusantium est reiciendis, fugit et labore omnis quidem
+                voluptatibus? Magni omnis fuga id recusandae rerum labore optio. Distinctio similique cumque culpa fuga
+                repellat, molestias, soluta consequatur ad delectus quia et, error nam fugiat qui voluptate doloremque
+                odio
+                obcaecati voluptatum. Provident, velit minima. Amet enim, nobis sint reprehenderit unde ducimus
+                temporibus
+                labore perspiciatis expedita facilis voluptatum. Voluptate facere praesentium, dolorem debitis officia,
+                amet
+                distinctio velit expedita, omnis iusto quod nam vel aperiam impedit eos ipsum dolore dignissimos?
+                Repudiandae
+                ullam deleniti a. Alias ab rem facilis molestias eius, quidem repellat suscipit soluta, sint laudantium
+                dignissimos? Obcaecati, amet.</p>
+            <footer>
+                Author : frontend41@theeasylearnacademy.com
+            </footer>
+        </article>
+
+        <article>
+            <header>
+                <h3>News 3</h3>
+            </header>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia dolor aspernatur non accusamus culpa
+                tempora rem
+                voluptatum voluptates maxime, perferendis sequi temporibus cupiditate? Rem facere iusto suscipit
+                possimus
+                temporibus maiores id eveniet voluptas explicabo nam dolor voluptatum eius optio rerum blanditiis culpa
+                consequuntur sequi libero perspiciatis voluptatem commodi, beatae quod quibusdam tempora. Non facere
+                laudantium
+                assumenda nemo nulla optio eligendi, repellat officiis beatae illum ex atque a harum accusamus! Non
+                repellendus
+                facere saepe ducimus, libero dolores aliquam unde magnam harum ut quis laborum incidunt laudantium esse
+                dignissimos ab explicabo soluta praesentium vitae temporibus! Earum nulla doloremque deleniti, obcaecati
+                dolores
+                animi dolor odio totam necessitatibus itaque accusantium est reiciendis, fugit et labore omnis quidem
+                voluptatibus? Magni omnis fuga id recusandae rerum labore optio. Distinctio similique cumque culpa fuga
+                repellat, molestias, soluta consequatur ad delectus quia et, error nam fugiat qui voluptate doloremque
+                odio
+                obcaecati voluptatum. Provident, velit minima. Amet enim, nobis sint reprehenderit unde ducimus
+                temporibus
+                labore perspiciatis expedita facilis voluptatum. Voluptate facere praesentium, dolorem debitis officia,
+                amet
+                distinctio velit expedita, omnis iusto quod nam vel aperiam impedit eos ipsum dolore dignissimos?
+                Repudiandae
+                ullam deleniti a. Alias ab rem facilis molestias eius, quidem repellat suscipit soluta, sint laudantium
+                dignissimos? Obcaecati, amet.</p>
+            <footer>
+                Author : frontend41@theeasylearnacademy.com
+            </footer>
+        </article>
+
+        <article>
+            <header>
+                <h3>news 4</h3>
+            </header>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia dolor aspernatur non accusamus culpa
+                tempora rem
+                voluptatum voluptates maxime, perferendis sequi temporibus cupiditate? Rem facere iusto suscipit
+                possimus
+                temporibus maiores id eveniet voluptas explicabo nam dolor voluptatum eius optio rerum blanditiis culpa
+                consequuntur sequi libero perspiciatis voluptatem commodi, beatae quod quibusdam tempora. Non facere
+                laudantium
+                assumenda nemo nulla optio eligendi, repellat officiis beatae illum ex atque a harum accusamus! Non
+                repellendus
+                facere saepe ducimus, libero dolores aliquam unde magnam harum ut quis laborum incidunt laudantium esse
+                dignissimos ab explicabo soluta praesentium vitae temporibus! Earum nulla doloremque deleniti, obcaecati
+                dolores
+                animi dolor odio totam necessitatibus itaque accusantium est reiciendis, fugit et labore omnis quidem
+                voluptatibus? Magni omnis fuga id recusandae rerum labore optio. Distinctio similique cumque culpa fuga
+                repellat, molestias, soluta consequatur ad delectus quia et, error nam fugiat qui voluptate doloremque
+                odio
+                obcaecati voluptatum. Provident, velit minima. Amet enim, nobis sint reprehenderit unde ducimus
+                temporibus
+                labore perspiciatis expedita facilis voluptatum. Voluptate facere praesentium, dolorem debitis officia,
+                amet
+                distinctio velit expedita, omnis iusto quod nam vel aperiam impedit eos ipsum dolore dignissimos?
+                Repudiandae
+                ullam deleniti a. Alias ab rem facilis molestias eius, quidem repellat suscipit soluta, sint laudantium
+                dignissimos? Obcaecati, amet.</p>
+            <footer>
+                Author : frontend41@theeasylearnacademy.com
+            </footer>
+        </article>
+
+        <article>
+            <header>
+                <h3>News 5</h3>
+            </header>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia dolor aspernatur non accusamus culpa
+                tempora rem
+                voluptatum voluptates maxime, perferendis sequi temporibus cupiditate? Rem facere iusto suscipit
+                possimus
+                temporibus maiores id eveniet voluptas explicabo nam dolor voluptatum eius optio rerum blanditiis culpa
+                consequuntur sequi libero perspiciatis voluptatem commodi, beatae quod quibusdam tempora. Non facere
+                laudantium
+                assumenda nemo nulla optio eligendi, repellat officiis beatae illum ex atque a harum accusamus! Non
+                repellendus
+                facere saepe ducimus, libero dolores aliquam unde magnam harum ut quis laborum incidunt laudantium esse
+                dignissimos ab explicabo soluta praesentium vitae temporibus! Earum nulla doloremque deleniti, obcaecati
+                dolores
+                animi dolor odio totam necessitatibus itaque accusantium est reiciendis, fugit et labore omnis quidem
+                voluptatibus? Magni omnis fuga id recusandae rerum labore optio. Distinctio similique cumque culpa fuga
+                repellat, molestias, soluta consequatur ad delectus quia et, error nam fugiat qui voluptate doloremque
+                odio
+                obcaecati voluptatum. Provident, velit minima. Amet enim, nobis sint reprehenderit unde ducimus
+                temporibus
+                labore perspiciatis expedita facilis voluptatum. Voluptate facere praesentium, dolorem debitis officia,
+                amet
+                distinctio velit expedita, omnis iusto quod nam vel aperiam impedit eos ipsum dolore dignissimos?
+                Repudiandae
+                ullam deleniti a. Alias ab rem facilis molestias eius, quidem repellat suscipit soluta, sint laudantium
+                dignissimos? Obcaecati, amet.</p>
+            <footer>
+                Author : frontend41@theeasylearnacademy.com
+            </footer>
+        </article>
+    </section>
+</body>
+
+</html>
