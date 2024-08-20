@@ -10,7 +10,7 @@
 https://tinyurl.com/yry2d74p
 
 6) create change password vertical form 
-7) create checkout vertical form for credit card/debit card 
+7) create payment vertical form for credit card/debit card 
 
 8) create grid form as per below url 
 https://bit.ly/46zYgTX
