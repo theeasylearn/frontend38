@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,105 +8,141 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
+
 <body>
     <div class="container">
-        <div class="row">
+        <div class="row mt-5">
             <div class="col-12">
-                <div class="card">
+                <div class="card shadow">
                     <div class="card-header text-bg-danger">
                         <h3>Register</h3>
                     </div>
                     <div class="card-body">
                         <form action="">
-<!--  First Name
-    Father name
-    Last Name
-    
-    Email
-    Mobile
-    Alternate no 
+                            <div class="row">
+                                <div class="col-12 col-sm-4 col-md-4 col-lg-4">
+                                    <div class="mb-2">
+                                        <input type="text" name="firstname" id="firstname" placeholder="your first name"
+                                            class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-4 col-md-4 col-lg-4">
+                                    <div class="mb-2">
+                                        <input type="text" name="fathername" id="fathername"
+                                            placeholder="your fathername" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-4 col-md-4 col-lg-4">
+                                    <div class="mb-2">
+                                        <input type="text" name="surname" id="surname" placeholder="your surname"
+                                            class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 col-sm-4 col-md-4 col-lg-4">
+                                    <div class="mb-2">
+                                        <input type="email" name="email" id="email" placeholder="your email address"
+                                            class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-4 col-md-4 col-lg-4">
+                                    <div class="mb-2">
+                                        <input type="tel" name="mobile" id="mobile"
+                                            placeholder="your 10 digit mobile no" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-4 col-md-4 col-lg-4">
+                                    <div class="mb-2">
+                                        <input type="tel" name="alternateno" id="alternateno" placeholder="Alternate No"
+                                            class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 col-sm-4 col-md-4 col-lg-4">
+                                    <label class="my-1">Select Gender</label>
+                                    <div class="col-12">
+                                        <div class="form-check">
+                                            <label for="male" class="form-check-label">
+                                                <input type="radio" class="form-check-input" name="gender" id="male"
+                                                    value="1" required /> Male
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <label for="female" class="form-check-label">
+                                                <input type="radio" class="form-check-input" name="gender" id="female"
+                                                    value="2" required /> Female
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-4 col-md-4 col-lg-4">
+                                    <label for="" class="form-label">Date of birth</label>
+                                    <input type="date" name="" class="form-control" id="">
+                                </div>
+                                <div class="col-12 col-sm-4 col-md-4 col-lg-4">
+                                    <label for="bloodgroup" class="form-label">Select blood group</label>
+                                    <select name="bloodgroup" id="bloodgroup" class="form-select">
+                                        <option value="A+">A+</option>
+                                        <option value="A-">A-</option>
+                                        <option value="B+">B+</option>
+                                        <option value="B-">B-</option>
+                                        <option value="AB+">AB+</option>
+                                        <option value="AB-">AB-</option>
+                                        <option value="O+">O+</option>
+                                        <option value="O-">O-</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 col-sm-6 col-md-3 col-lg-3">
+                                    <label for="city" class="form-label">City</label>
+                                    <input type="text" name="city" id="city" class="form-control">
+                                </div>
+                                <div class="col-12 col-sm-6 col-md-3 col-lg-3">
+                                    <label for="pincode" class="form-label">Pincode</label>
+                                    <input type="text" name="pincode" id="pincode" class="form-control">
+                                </div>
+                                <div class="col-12 col-sm-6 col-md-3 col-lg-3">
+                                    <label for="address" class="form-label">Address</label>
+                                    <textarea name="address" id="address" class="form-control"></textarea>
+                                </div>
+                                <div class="col-12 col-sm-6 col-md-3 col-lg-3">
+                                    <label class="my-1">Select Nationality</label>
+                                    <div class="form-check">
+                                        <label for="indian" class="form-check-label">
+                                            Indian
+                                        </label>
+                                        <input type="checkbox" name="indian" id="indian" value="1"
+                                            class="form-check-input">
+                                    </div>
 
-    Gender 
-    Date of birth
-    Blood group 
-    Photo 
+                                    <div class="form-check">
+                                        <label for="american" class="form-check-label">
+                                            American
+                                        </label>
+                                        <input type="checkbox" name="american" id="american" value="2"
+                                            class="form-check-input">
+                                    </div>
 
-    City 
-    Pincode 
-    Address
-    Nationality -->
-    <div class="row">
-        <div class="col-12">
-            <div class="mb-2">
-                <input type="text"
-                name="firstname"  id="firstname"
-                placeholder="your first name" class="form-control">
-            </div>
-        </div>
-        <div class="col-12">
-            <div class="mb-2">
-                <input type="text" name="fathername" id="fathername" placeholder="your fathername" class="form-control">
-            </div>
-        </div>
-        <div class="col-12">
-            <div class="mb-2">
-                <input type="text" name="surname" id="surname" placeholder="your surname" class="form-control">
-            </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-12">
-            <div class="mb-2">
-                <input type="email" name="email" id="email" placeholder="your email address" class="form-control">
-            </div>
-        </div>
-        <div class="col-12">
-            <div class="mb-2">
-                <input type="tel" name="mobile" id="mobile" placeholder="your 10 digit mobile no" class="form-control">
-            </div>
-        </div>
-        <div class="col-12">
-            <div class="mb-2">
-                <input type="tel" name="alternateno" id="alternateno" placeholder="Alternate No" class="form-control">
-            </div>
-        </div>
-    </div>
-    <div class="row">
-       <div class="col-12">
-            <label class="my-1">Select Gender</label>
-            <div class="col-12">
-                <div class="form-check">
-                    <label for="male" class="form-check-label">
-                        <input type="radio" class="form-check-input" name="gender" id="male" value="1" required /> Male
-                    </label>
-                </div>
-                <div class="form-check">
-                    <label for="female" class="form-check-label">
-                        <input type="radio" class="form-check-input" name="gender" id="female" value="2" required /> Female
-                    </label>
-                </div>
-            </div>
-       </div>
-       <div class="col-12">
-            <label for="" class="form-label">Date of birth</label>
-            <input type="date" name="" class="form-control" id="">
-       </div>
-       <div class="col-12">
-            <label for="bloodgroup" class="form-check">Select blood group</label>
-            <select name="bloodgroup" id="bloodgroup" class="form-select">
-                <option value="">Select blood group</option>
-                <option value="A+">A+</option>
-                <option value="A-">A-</option>
-                <option value="B+">B+</option>
-                <option value="B-">B-</option>
-                <option value="AB+">AB+</option>
-                <option value="AB-">AB-</option>
-                <option value="O+">O+</option>
-                <option value="O-">O-</option>
-            </select>
-       </div>
-    </div>
-    </form>
+                                    <div class="form-check">
+                                        <label for="british" class="form-check-label">
+                                            British
+                                        </label>
+                                        <input type="checkbox" name="british" id="british" value="3"
+                                            class="form-check-input">
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 d-flex justify-content-end">
+                                    <button type="submit" class="btn btn-danger">Save changes</button>  
+                                    <button type="submit" class="btn btn-light">Clear all</button>
+                                </div>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -116,4 +153,5 @@
         crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/20994dd270.js" crossorigin="anonymous"></script>
 </body>
+
 </html>
