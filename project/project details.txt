@@ -1,0 +1,20 @@
+reference 
+	http://www.o3physio.com/index.php
+	https://healthyfuture.in/
+	https://physiotherapistahmedabad.com/
+	
+content
+	Home (http://www.o3physio.com/index.php)
+	About us
+		introduction to company  (https://healthyfuture.in/about-us/)
+		Team Detail (http://www.o3physio.com/our-team.php)
+	Services (https://healthyfuture.in/service/physiotherapy-services/)
+	Gallary
+		Images (https://healthyfuture.in/media-gallery/)
+		Videos (https://healthyfuture.in/video-gallery/)
+	Blogs
+		https://physiotherapistahmedabad.com/blogs/
+	FAQ	
+		https://healthyfuture.in/faqs/
+	Contact us 
+		https://physiotherapistahmedabad.com/contact-us/
