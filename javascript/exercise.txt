@@ -1,0 +1,4 @@
+1) create web page that has 2 button. 
+    when user click on first button display jan gan man in web page in hindi 
+    when user click on 2nd button display vande matram in web page in gujarati
+

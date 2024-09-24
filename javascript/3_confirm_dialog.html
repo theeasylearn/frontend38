@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>confirm dialogbox</h1>
+    <table width="100%" border="2">
+        <tr>
+            <td width="80%">
+                "Dear user, please confirm to proceed with the ₹500 subscription charge for your premium plan. Click
+                'Allow' to continue."
+            </td>
+            <td>
+                <button type="button" onclick="startSubscription();">Subscribe</button>
+            </td>
+        </tr>
+    </table>
+    <script>
+        //create user defined function
+        function startSubscription() {
+            let response = confirm("are you sure you want to do this?");
+            if (response == true) {
+                alert('ok, welcome to the board');
+                //display another page to user (change webpage)
+                window.location = 'success.html'; 
+                // window.location is used to change web page
+            }
+            else
+                alert('no worries, please come later');
+        }
+    </script>
+</body>
+
+</html>
