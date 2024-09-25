@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Conditional Operators</h1>
+    <hr />
+    <script>
+        var hours=0;
+        hours = prompt("enter hours in 24 hour format",0);
+        //convert hours into integer
+        hours = parseInt(hours);
+        // message = '';
+        // if(hours>12)
+        //     message = (hours - 12) + " PM";
+        // else 
+        //     message = hours + " AM";
+        // or
+        message = (hours>12) ? (hours - 12) + " PM " : hours + " AM ";
+        document.write("<h2>",message,"</h2>");
+
+    </script>
+</body>
+</html>
