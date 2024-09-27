@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>working with innerhtml </h1>
+    <hr>
+    <table width="100%" align="center" cellpadding="10" border="2">
+        <tr>
+            <td width="50%" align="center">
+                <button type="button" onclick="changeContent();">Set text</button>
+            </td>
+            <td align="center">
+                <button type="button" onclick="calculateTotal();">get text</button>
+            </td>
+        </tr>
+        <tr>
+            <td id="geet">
+                we will change this tag when user click on button
+            </td>
+            <td>
+                <ul>
+                    <li class="item">10</li>
+                    <li class="item">20</li>
+                    <li class="item">30</li>
+                    <li class="item">40</li>
+                    <li class="item">50</li>
+                    <li class="item">60</li>
+                    <li class="item">70</li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+    <h1 id="output"></h1>
+    <script>
+        //user defined function
+        function changeContent() {
+            let content = `
+                            वन्दे मातरम् <br/>
+                            वन्दे मातरम्। <br/>
+                            सुजलां सुफलां मलयजशीतलाम्, <br/>
+                            शस्यशामलां मातरम्। <br/>
+                            वन्दे मातरम्। <br/>
+                            शुभ्रज्योत्स्ना पुलकित यामिनीम्, <br/>
+                            फुल्लकुसुमित द्रुमदलशोभिनीम्, <br/>
+                            सुहासिनीं सुमधुर भाषिणीम्, <br/>
+                            सुखदां वरदां मातरम्। <br/>
+                            वन्दे मातरम्। <br/>
+                            वन्दे मातरम्।`;
+            document.getElementById('geet').innerHTML = content;
+            // alert('button clicked...');
+        }
+        function calculateTotal() {
+            let list = document.getElementsByTagName('li');
+            // let list = document.getElementsByClassName('item');
+            // console.log(list);
+            var total=0
+            for (let position = 0; position < list.length; position++) {
+                console.log(list[position].innerHTML);
+                total = total + parseInt(list[position].innerHTML);
+            }
+            document.getElementById('output').innerHTML = total;
+        }
+    </script>
+</body>
+
+</html>
