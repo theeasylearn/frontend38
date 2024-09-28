@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            font-size: x-large;
+        }
+
+        h1 {
+            font-size: xx-large;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .input-box {
+            padding: 5px;
+            border: 1px solid blue;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="success.html" method="post" onsubmit="return CalculateReturn();">
+        <table border="1" align="center" cellpadding="10" width="50%">
+            <tr>
+                <td align="center">
+                    <h1>SIP Calculator</h1>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="investment">Monthly investment</label>
+                    <input class="input-box" type="number" name="investment" id="investment" required />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="rate">Expected Return Rate</label>
+                    <input class="input-box" type="number" name="rate" id="rate" required />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="months">Tenure (Months)</label>
+                    <input class="input-box" type="number" name="months" id="months" required />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit" value="Calculate Total Return" />
+                    <input type="reset" value="Calculate Total Return" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3 id="total_investment_amount"></h3>
+                    <h3 id="estimated_return"></h3>
+                    <h3 id="total"></h3>
+                </td>
+            </tr>
+        </table>
+    </form>
+    <script>
+        function CalculateReturn() {
+            let investment = document.getElementsByName('investment')[0].value;
+            let rate = document.getElementsByName('rate')[0].value;
+            let months = document.getElementsByName('months')[0].value;
+            console.log(investment, rate, months);
+            //convert it into integer 
+            investment = parseInt(investment);
+            rate = parseInt(rate);
+            months = parseInt(months);
+
+
+            //calculate investment value 
+            let total_investment_amount = investment * months;
+            document.getElementById('total_investment_amount').innerHTML = "Total Investment amount = " + total_investment_amount
+
+            //calculate estimated sip's total return 
+            let annual_rate = rate / 100;  // Convert percentage to decimal
+            let monthly_rate = annual_rate / 12;  // Monthly rate
+            let years = months / 12;  // Convert months to years
+
+            // SIP formula: A = P * [(1 + r/n)^(nt) - 1] * (1 + r/n) / (r/n)
+            let estimated_return = investment * (((Math.pow((1 + monthly_rate), months) - 1) / monthly_rate) * (1 + monthly_rate));
+
+            document.getElementById('estimated_return').innerHTML = "Estimated SIP Total Return = " + estimated_return.toFixed(2);
+
+            document.getElementById('total').innerHTML = "total value = " + (estimated_return - total_investment_amount).toFixed(2);
+
+            return false; //prevent submitting form to success.html
+        }
+    </script>
+</body>
+
+</html>

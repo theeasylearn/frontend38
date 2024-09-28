@@ -3,3 +3,8 @@
     when user click on 2nd button display vande matram in web page in gujarati
 
 2) create web page that will display multiplication table of 1 to 10 when user click button. each table should be displayed separate td tag as table 
+
+
+3) develop Simple Interest Calculator
+
+4) 
